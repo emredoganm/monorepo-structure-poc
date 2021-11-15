@@ -6,7 +6,6 @@
     "composite": true,
     "declarationMap": true,
     "esModuleInterop": true,
-    "incremental": true,
     "jsx": "react",
     "lib": ["esnext"],
     "module": "commonjs",
@@ -21,9 +20,5 @@
     "target": "es6"
   },
   "exclude": ["node_modules", "dist", "*.d.ts"],
-  "references": [
-    { "path": "./packages/core" },
-    { "path": "./packages/mobile" },
-    { "path": "./packages/web" }
-  ]
+  "references": [{ "path": "./packages/core" }]
 }
