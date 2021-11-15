@@ -1,20 +1,29 @@
 {
-  "files": [],
-  "include": [],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "jsx": "react",
+    "lib": ["esnext"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "paths": { "@emredoganm/*": ["packages/*/src/index.ts"] },
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6"
+  },
+  "exclude": ["node_modules", "dist", "*.d.ts"],
   "references": [
     { "path": "./packages/core" },
     { "path": "./packages/mobile" },
     { "path": "./packages/web" }
-  ],
-  "compilerOptions": {
-    "jsx": "react",
-    "module": "es6",
-    "target": "es6",
-    "sourceMap": true,
-    "declaration": true,
-    "noImplicitAny": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
-  },
-  "exclude": ["node_modules", "dist"]
+  ]
 }
