@@ -1,6 +1,6 @@
 {
   "name": "@emredoganm/mono-web",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
