@@ -15,7 +15,7 @@
   ],
   "author": "Emre Dogan <emredoganm@live.com>",
   "homepage": "https://github.com/emredoganm/monorepo-structure-poc",
-  "license": "MIT",
+  "license": "ISC",
   "main": "index.js",
   "files": [
     "index.js"
