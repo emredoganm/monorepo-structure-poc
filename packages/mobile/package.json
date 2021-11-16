@@ -1,6 +1,6 @@
 {
   "name": "@emredoganm/mono-mobile",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "main": "index.js",
   "license": "MIT",
   "gitHead": "97ca02d7bb87cf52ea5a9c0929d17cb3c2b45121",
@@ -9,6 +9,6 @@
     "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "@emredoganm/eslint-config-monorepo": "^0.6.3"
+    "@emredoganm/eslint-config-monorepo": "^0.6.4"
   }
 }
