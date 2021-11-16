@@ -2,6 +2,9 @@
   "name": "@emredoganm/eslint-config-monorepo",
   "version": "0.6.1",
   "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Simple ESLint configuration example for the monorepo",
   "keywords": [
     "eslint",
