@@ -1,23 +1,39 @@
 {
-  "name": "@emredoganm/mono-eslint-config",
-  "version": "0.6.0",
-  "main": "index.js",
+  "name": "@emredoganm/eslint-config-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Simple ESLint configuration example for the monorepo",
+  "keywords": [
+    "eslint",
+    "config",
+    "monorepo",
+    "lint",
+    "linting"
+  ],
+  "author": "Emre Dogan <emredoganm@live.com>",
+  "homepage": "https://github.com/emredoganm/monorepo-structure-poc",
   "license": "MIT",
-  "scripts": {
-    "lint": "eslint ."
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emredoganm/monorepo-structure-poc.git"
   },
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/emredoganm/monorepo-structure-poc/issues"
   },
   "dependencies": {
-    "eslint": "^7.2.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint": "^7.12.1",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-promise": "^5.1.1",
-    "prettier": "^2.4.1"
-  },
-  "gitHead": "97ca02d7bb87cf52ea5a9c0929d17cb3c2b45121"
+    "eslint-plugin-promise": "^4.2.1"
+  }
 }

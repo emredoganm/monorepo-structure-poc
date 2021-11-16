@@ -3,5 +3,8 @@
   "version": "0.6.0",
   "main": "index.js",
   "license": "MIT",
-  "gitHead": "97ca02d7bb87cf52ea5a9c0929d17cb3c2b45121"
+  "gitHead": "97ca02d7bb87cf52ea5a9c0929d17cb3c2b45121",
+  "dependencies": {
+    "@emredoganm/eslint-config-monorepo": "^0.0.0"
+  }
 }
