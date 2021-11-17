@@ -1,3 +1,4 @@
 {
-  "extends": "@emredoganm/monorepo/mobile"
+  "extends": "@emredoganm/monorepo/mobile",
+  "rules": { "semi": ["error", "always"] }
 }
