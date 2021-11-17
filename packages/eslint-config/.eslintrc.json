@@ -1,4 +1,16 @@
 {
   "extends": "standard",
-  "rules": { "quotes": ["error", "single"] }
+  "rules": {
+    "quotes": ["error", "single"],
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "comments": 120,
+        "ignoreUrls": true,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true
+      }
+    ]
+  }
 }
