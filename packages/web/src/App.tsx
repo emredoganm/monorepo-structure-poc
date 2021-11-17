@@ -6,7 +6,7 @@ interface AppProps {}
 
 export const App: React.FC<AppProps> = () => {
   return (
-    <div className="App">
+    <div className="App" data-test-id="test for danger">
       <code>
         <pre>{JSON.stringify(variables, null, 2)}</pre>
       </code>
