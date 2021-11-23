@@ -1,0 +1,19 @@
+{
+  "name": "@emredoganm/mono-typescript-config",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "Emre Dogan <emredoganm@live.com>",
+  "homepage": "https://github.com/emredoganm/monorepo-structure-poc#readme",
+  "license": "ISC",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emredoganm/monorepo-structure-poc.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/emredoganm/monorepo-structure-poc/issues"
+  }
+}

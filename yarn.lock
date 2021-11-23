@@ -1235,6 +1235,17 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
+"@emredoganm/eslint-config-monorepo@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@emredoganm/eslint-config-monorepo/-/eslint-config-monorepo-0.8.0.tgz#f8ebddfbbaa768c04fc6a102b50c2942c442764c"
+  integrity sha512-W2y5YU37rEaDNuz0GnzS8xucQ5mBxtNa8jn3kBMvkxQDBJsQ+Tq8m2TPit6nkJELsJC3vRcVa83FP4iCu+U8jA==
+  dependencies:
+    eslint "^7.12.1"
+    eslint-config-standard "^16.0.3"
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-node "^11.1.0"
+    eslint-plugin-promise "^4.2.1"
+
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.4.3.tgz#9e42981ef035beb3dd49add17acb96e8ff6f394c"
