@@ -1,6 +1,6 @@
 {
   "name": "@emredoganm/u-and-i",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "main": "src/index.jsx",
   "dependencies": {
     "@babel/core": "7.12.3",
