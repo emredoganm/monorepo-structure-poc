@@ -1,7 +1,7 @@
 {
   "name": "@emredoganm/u-and-i",
-  "version": "0.3.0",
-  "main": "src/index.tsx",
+  "version": "0.3.1",
+  "main": "src/index.js",
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
