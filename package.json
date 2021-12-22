@@ -10,7 +10,7 @@
     "lerna": "^4.0.0"
   },
   "scripts": {
-    "publish": "lerna publish --from-git --yes",
+    "publish": "lerna publish from-git --yes",
     "version": "lerna version --force-git-tag --include-merged-tags --exact --yes"
   }
 }
