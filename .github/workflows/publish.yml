@@ -8,9 +8,26 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     name: Version and Publish the changes
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
     steps:
-      - run: |
-          echo ${{github.event_name}}
-          echo ${{github.event.action}}
-          echo ${{github.event.pull_request.merged}}
-          echo Status: ${{github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true}}
+      - uses: actions/checkout@v2
+        name: Checkout
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v1
+        name: Setup Node v14.x
+        with:
+          node-version: 14.x
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Authenticate with Registry
+        run: |
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+          echo "access=public" >> .npmrc
+          npm whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Version
+        run: yarn run version
+      - name: Publish
+        run: yarn run publish
