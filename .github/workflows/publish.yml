@@ -1,0 +1,16 @@
+name: Version & Publish
+on:
+  pull_request:
+    branches:
+      - master
+    types: [closed]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    name: Version and Publish the changes
+    steps:
+      - run: |
+          echo ${{github.event_name}}
+          echo ${{github.event.action}}
+          echo ${{github.event.pull_request.merged}}
+          echo Status: ${{github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true}}
