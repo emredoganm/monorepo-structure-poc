@@ -23,6 +23,7 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Authenticate with Registry
         run: |
+          yarn logout
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
           echo "access=public" >> .npmrc
           npm whoami
