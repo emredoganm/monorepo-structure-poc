@@ -22,7 +22,7 @@
     "clean": "lerna run clean --stream --parallel",
     "list": "lerna list --long --all",
     "postinstall": "husky install",
-    "publish": "lerna publish from-git --force-git-tag --include-merged-tags --exact --yes --no-verify-access",
+    "publish": "lerna publish from-package --force-git-tag --include-merged-tags --exact --yes --no-verify-access",
     "typecheck": "tsc --noEmit"
   },
   "engines": {
