@@ -1,16 +1,39 @@
 {
   "name": "monorepo-structure-poc",
-  "private": "true",
+  "private": true,
   "workspaces": [
     "packages/**"
   ],
   "devDependencies": {
-    "danger": "^10.7.1",
-    "danger-plugin-toolbox": "^1.30.0",
-    "lerna": "^4.0.0"
+    "@commitlint/cli": "15.0.0",
+    "@commitlint/config-conventional": "15.0.0",
+    "@commitlint/config-lerna-scopes": "15.0.0",
+    "cz-conventional-changelog": "3.3.0",
+    "danger": "10.7.1",
+    "danger-plugin-toolbox": "1.30.0",
+    "husky": "7.0.4",
+    "lerna": "4.0.0"
   },
   "scripts": {
+    "bootstrap:build": "lerna clean --yes && yarn clean && yarn bootstrap:ci",
+    "bootstrap:ci": "lerna bootstrap --force-local --ci && yarn build",
+    "bootstrap": "lerna clean --yes && lerna bootstrap --force-local",
+    "build": "lerna run build --stream",
+    "clean": "lerna run clean --stream --parallel",
+    "list": "lerna list --long --all",
+    "postinstall": "husky install",
     "publish": "lerna publish from-git --yes",
+    "typecheck": "tsc --noEmit",
     "version": "lerna version --force-git-tag --include-merged-tags --exact --yes"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.20.0",
+    "node": ">= 14.0.0 <15.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
