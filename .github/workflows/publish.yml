@@ -1,4 +1,4 @@
-name: Version & Publish
+name: Publish
 on:
   pull_request:
     branches:
@@ -10,6 +10,9 @@ jobs:
     name: Version and Publish the changes
     if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
     steps:
+      - name: Create cache folder
+        run: mkdir -p /home/runner/.cache/yarn/v6
+        continue-on-error: true
       - uses: actions/checkout@v2
         name: Checkout
         with:
@@ -19,8 +22,6 @@ jobs:
         with:
           node-version: "14"
           cache: "yarn"
-        env:
-          FORCE_COLOR: 2
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Authenticate with Registry
@@ -34,7 +35,5 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-      - name: Version
-        run: yarn run version
       - name: Publish
         run: yarn run publish

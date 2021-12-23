@@ -22,9 +22,8 @@
     "clean": "lerna run clean --stream --parallel",
     "list": "lerna list --long --all",
     "postinstall": "husky install",
-    "publish": "lerna publish from-git --yes --no-verify-access",
-    "typecheck": "tsc --noEmit",
-    "version": "lerna version --force-git-tag --include-merged-tags --exact --yes"
+    "publish": "lerna publish from-git --force-git-tag --include-merged-tags --exact --yes --no-verify-access",
+    "typecheck": "tsc --noEmit"
   },
   "engines": {
     "npm": "please-use-yarn",
