@@ -28,6 +28,10 @@ jobs:
           npm whoami
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Setup Github Bot as a User
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Version
         run: yarn run version
       - name: Publish
