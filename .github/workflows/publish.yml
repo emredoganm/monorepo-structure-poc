@@ -7,7 +7,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    name: Version and Publish the changes
+    name: Publish the packages
     if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
     steps:
       - name: Create cache folder
@@ -15,8 +15,6 @@ jobs:
         continue-on-error: true
       - uses: actions/checkout@v2
         name: Checkout
-        with:
-          fetch-depth: 0
       - uses: actions/setup-node@v2
         name: Setup Node v14.x
         with:
