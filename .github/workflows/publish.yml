@@ -19,6 +19,8 @@ jobs:
         with:
           node-version: "14"
           cache: "yarn"
+        env:
+          FORCE_COLOR: 2
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Authenticate with Registry
