@@ -1,10 +1,10 @@
 {
   "name": "@emredoganm/u-and-i",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "main": "src/index.jsx",
   "dependencies": {
     "@babel/core": "7.12.3",
-    "@emredoganm/mono-core": "0.7.1",
+    "@emredoganm/mono-core": "0.8.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
     "@svgr/webpack": "5.5.0",
     "@testing-library/jest-dom": "^5.11.4",
